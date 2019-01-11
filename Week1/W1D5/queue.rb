@@ -1,18 +1,31 @@
 class Queue
     def initialize
-        line = []
+        @line = []
     end 
-    
-    def enqueue(el)
 
+    def enqueue(el)
+        @line.push(el)
+    end
+
+    def dequeue
+        @line.shift
     end
 
     def peek
-
+        @line[0]
     end 
-end 
+end
+
+# Test Cases
+apple_store = Queue.new
+p apple_store.enqueue("Rome")
+p apple_store.peek
+p apple_store.enqueue("Kevin")
+p apple_store.peek
+p apple_store.enqueue("Mike")
+p apple_store.peek
+p apple_store.dequeue
+p apple_store.peek
+p apple_store.enqueue("Joseph")
 
 
-Now let's write a Queue class. We will need the following instance methods: enqueue(el), dequeue, and peek.
-
-Test your code to ensure it follows the principle of FIFO.
