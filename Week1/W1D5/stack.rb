@@ -21,7 +21,7 @@ class Stack
     end
 end
 
-
+# Test Case
 stack = Stack.new([1,2,3,4,5,6])
 p stack.push(1)
 p stack.peek 
