@@ -5,8 +5,8 @@ import Root from './components/root';
 
 import { createStore } from 'redux'
 
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
   const root = document.getElementById('root');
-  const store = createStore(reducer);
-  ReactDOM.render(<Root store={store} />, root);
+  // const store = createStore(reducer);
+  ReactDOM.render(root);
 });
