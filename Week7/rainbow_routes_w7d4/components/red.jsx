@@ -9,7 +9,7 @@ class Red extends React.Component {
       <div>
         <h2 className="red"></h2>
         {/* Links here */}
-
+        
         {/* Routes here */}
       </div>
     );
